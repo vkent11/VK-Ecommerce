@@ -1,0 +1,195 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*:root {
+    --primaryColor: #f1f1f1;
+    --black: #222;
+    --black2: #555;
+    --black3: #252525;
+    --black4: #000;
+    --black5: #212529;
+    --orange: #eb0028;
+    --white: #fff;
+    --grey: #959595;
+    --grey2: #666;
+    --grey3: #ccc;
+    --secondaryColor: #2b1f4d;
+    --yellow: #ffcc00;
+    --green: #59b210;
+    --blue: rgb(56, 10, 223);
+    --orange1: rgb(245, 84, 9);
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover: .2rem solid var(--black);
+    --light-color: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+    *::selection {
+        color: var(--orange);
+        background-color: #fff;
+    }
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body,
+input {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Archivo", sans-serif;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: var(--grey);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0, 0, 0, 0.25);
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--grey2);
+    }
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to right, #201c29, #201c29 1px, #100e17 1px, #100e17);
+}
+
+
+
+
+/*Add to CArt*/
+
+
+.containers {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4%;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+    .containers > h1 {
+        padding: 20px 0;
+    }
+
+    .containers .navbar-brand {
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+        font-family: 'Bebas Neue', cursive;
+        padding-left: 90px;
+    }
+
+    .containers h3 a {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+        font-family: 'Bebas Neue', cursive;
+        text-decoration: none;
+    }
+
+@media screen and (max-width: 1220px) {
+
+    .containers {
+        max-width: 95%;
+    }
+}
+
+.Wrapper {
+    height: 100vh;
+}
+
+.card {
+    font-size: 24px;
+}
+
+    .card:hover {
+        -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+        box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    }
+
+.container-content {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 99999;
+    /*display: flex;*/
+    /*align-items: center;
+    justify-content: center;*/
+    display:inline-block;
+}
+
+.content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 1.2rem;
+    padding: 2rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 70rem;
+}
+.Profile-Image {
+    margin-right: 40px;
+}
+.content .Labels {
+    font-family: 'Bebas Neue', cursive;
+    color: crimson;
+    font-size: 20px;
+}
+.content .LB {
+    font-size: 20px;
+}
+#BtnUpdateUser {
+    font-size: 20px;
+    margin-left: 25px;
+    color: #fff;
+    background-color: #0A2558;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}

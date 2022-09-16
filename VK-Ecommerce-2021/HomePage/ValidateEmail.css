@@ -1,0 +1,167 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Image/news1.jpg);
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 100;
+    padding: 10px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+    .container .title {
+        font-size: 3rem;
+        font-weight: 600;
+        position: relative;
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 2px;
+    }
+
+    .container .sub-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        position: relative;
+        text-align: center;
+        color: rgb(80, 78, 78);
+        padding-bottom: 20px;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 2px;
+    }
+
+
+    .container .form .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+    }
+
+.form .user-details .input-box {
+    width: calc(100% / 1 - 10px);
+    margin-bottom: 15px;
+}
+.container .form .user-details .Valid {
+    color: crimson;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.user-details .input-box #txtEmail {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+
+    .user-details .input-box #txtEmail:focus,
+    .user-details .input-box #txtEmail:valid {
+        border-color: rgba(17, 117, 231, 0.5);
+    }
+
+
+.form .btn-save {
+    height: 45px;
+    margin: 45px 0;
+}
+
+    .form .btn-save #BtnContinue {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        background: crimson;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 2.2rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        transition: all .3s ease;
+        border-radius: 5px;
+    }
+
+        .form .btn-save #BtnContinue:hover {
+            border: crimson 2px solid;
+            background: transparent;
+            color: #000;
+        }
+
+.form .user-details .input-box i {
+    margin-left: -30px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.container .form .Back {
+    font-size: 1.4rem;
+}
+
+    .container .form .Back a {
+        padding-left: 5px;
+        color: crimson;
+    }
+
+        .container .form .Back a:hover {
+            color: #000;
+        }
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .form .user-details .input-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .container .form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+}
